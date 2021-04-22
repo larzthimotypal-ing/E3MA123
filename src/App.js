@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import NavItem from './components/NavItem'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
       <Main title="Welcome"
       text="Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideals, tips, and photos with other like-minded people. So don't wast time! Get what you need, then turn off that computer and get out into the great outdoors!"/>
       {/* kyla */}
-      <footer></footer> 
+      <Footer text="This fake website example is CC0 - any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016" 
+      urlSource="https://www.vecteezy.com/free-vector/bird-icon" 
+      iconName="Eagle Icon" 
+      websiteSource="Vecteezy.com"/>
     </div>
   );
 }
