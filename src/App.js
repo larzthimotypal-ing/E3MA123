@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import NavItem from './components/NavItem'
 
 function App() {
   return (
@@ -12,11 +13,11 @@ function App() {
      
      
       {/* vince */}
-      <div className="nav-item"></div>
-      <div className="nav-item"></div>
-      <div className="nav-item"></div>
-      <div className="nav-item"></div>
-      <div className="nav-item"></div>
+      <NavItem text="Home" itemNumber="1" />
+      <NavItem text="Get Started" itemNumber="2" />
+      <NavItem text="Photos" itemNumber="3" />
+      <NavItem text="Gear" itemNumber="4" />
+      <NavItem text="Forum" itemNumber="5" />
       {/* mich */}
       <main></main>
       {/* kyla */}
