@@ -94,3 +94,38 @@ header{
 .nav-item5{
     grid-area: nav5;
 }
+
+main{
+    grid-area: main;
+    background-color: #0f211a;
+    margin-top: 0;
+    margin: 0 10px 10px 0;
+}
+
+main::before{
+    content:"";
+    height: 15px;
+    width: 110vw;
+    display: inline-block;
+    background-color: #aca69f;
+    margin: 0;
+    position: absolute;
+    left: -10px;
+    border-bottom: 10px solid #666b3a;
+}
+
+main h1{
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #dcdfe4;
+    margin-top: 52px;
+}
+
+main p{
+    line-height: 1.2;
+    padding: 1rem;
+    font-weight: medium;
+    color: #dcdfe4;
+    font-size: 1.2rem;
+}
