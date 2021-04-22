@@ -1,10 +1,16 @@
-
+import Header from './components/Header'
 
 function App() {
   return (
-    <div className="container">
+    <div className= "container">
       {/* raquel */}
-      <header></header>  
+      
+      <Header title="BIRDWATCHING" />
+      
+    
+     
+     
+     
       {/* vince */}
       <div className="nav-item"></div>
       <div className="nav-item"></div>
@@ -14,7 +20,7 @@ function App() {
       {/* mich */}
       <main></main>
       {/* kyla */}
-      <footer></footer>
+      <footer></footer> 
     </div>
   );
 }
