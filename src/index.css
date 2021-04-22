@@ -129,3 +129,30 @@ main p{
     color: #dcdfe4;
     font-size: 1.2rem;
 }
+
+footer::before{
+    content:"";
+    height: 15px;
+    width: 110vw;
+    display: inline-block;
+    background-color: #aca69f;
+    margin: 0;
+    position: absolute;
+    left: -10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #666b3a;
+}
+
+footer p{
+    margin: 50px 0 0;
+    color: #dcdfe4;
+    font-weight: 500;
+}
+
+.icon-source{
+    text-decoration: underline;
+    color: #dcdfe4;
+}
