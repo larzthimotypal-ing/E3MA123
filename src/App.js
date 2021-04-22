@@ -19,7 +19,8 @@ function App() {
       <NavItem text="Gear" itemNumber="4" />
       <NavItem text="Forum" itemNumber="5" />
       {/* mich */}
-      <main></main>
+      <Main title="Welcome"
+      text="Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideals, tips, and photos with other like-minded people. So don't wast time! Get what you need, then turn off that computer and get out into the great outdoors!"/>
       {/* kyla */}
       <footer></footer> 
     </div>
