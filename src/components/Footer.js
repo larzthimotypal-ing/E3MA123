@@ -1,7 +1,7 @@
 const Footer = ({text,urlSource,iconName,websiteSource}) => {
     return (
         <footer>
-            <p>{text}</p>
+            <p className="first">{text}</p>
             <p><a className="icon-source" href={urlSource} target="_blank">{iconName}</a> by {websiteSource}</p>
         </footer>
     )

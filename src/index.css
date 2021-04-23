@@ -12,25 +12,20 @@ body{
     margin: 0;
     background-color: rgb(16, 126, 16);
     overflow-x: hidden;
+    
 }
-
-
-
-
 .container{
     margin: 0 10px;
-    height: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 15% 10% 18% 21% 21% 15%;
     overflow: hidden;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 12% 8% 70% 10%;
     grid-template-areas: 
         "header header header header header"
         "nav1 nav2 nav3 nav4 nav5"
-        "main main main fav-title fav-title"
-        "main main main fav-photo1 fav-photo2"
-        "main main main fav-photo3 fav-photo4"
-        "footer footer footer footer footer "
+        "main main main favourite favourite"
+        "footer footer footer footer footer";
     
 }
 
@@ -39,7 +34,7 @@ header{
     display: flex;
     flex-direction: row;
     padding: 15px;
-    background-color: rgb(16, 126, 16);
+    background-color: rgb(16, 126, 16);;
 
     
 }
@@ -56,23 +51,23 @@ header{
 }
 
 .logo {
-  height: 100%;
-  width: auto;
-  margin-right: 40px;
+    height: 100%;
+    width: auto;
+    margin-right: 40px;
 }
 .nav-link{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #0f211a;
+    background-color: rgb(21, 192, 21);
 }
 
 .nav-link a{
-    color: #dcdfe4;
     font-weight: 500;
     letter-spacing: .5px;
     font-size: 1.5rem;
+    font-family: 'Anton',sans-serif;
 }
 
 .nav-item1{
@@ -97,7 +92,7 @@ header{
 
 main{
     grid-area: main;
-    background-color: #0f211a;
+    background-color: rgb(21, 192, 21);;
     margin-top: 0;
     margin: 0 10px 10px 0;
 }
@@ -111,23 +106,64 @@ main::before{
     margin: 0;
     position: absolute;
     left: -10px;
-    border-bottom: 10px solid #666b3a;
+    border-bottom: 10px solid rgb(16, 126, 16);;
 }
 
 main h1{
     text-align: center;
     font-size: 48px;
     letter-spacing: 2px;
-    color: #dcdfe4;
     margin-top: 52px;
+    font-family: 'Carter One', cursive; 
 }
 
 main p{
     line-height: 1.2;
     padding: 1rem;
     font-weight: medium;
-    color: #dcdfe4;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+}
+
+.favourite{
+    grid-area: favourite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    background-color: rgb(21, 192, 21);
+    margin-bottom: 10px;
+}
+
+.favourite h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.favourite .photos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.row{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.photo{
+    height: 110%;
+    width: 30%;
 }
 
 footer::before{
@@ -142,14 +178,19 @@ footer::before{
 }
 
 footer{
+    font-family: 'Montserrat', sans-serif; 
     grid-area: footer;
-    background-color: #666b3a;
+    background-color: rgb(16, 126, 16);
+    color: white;
 }
 
 footer p{
-    margin: 50px 0 0;
-    color: #dcdfe4;
+    margin: 0;
     font-weight: 500;
+}
+
+footer .first{
+    margin-top: 2rem;
 }
 
 .icon-source{

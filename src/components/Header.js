@@ -1,9 +1,9 @@
-import {ReactComponent as Logo} from '../birb.svg'
+import Logo from '../logo.png'
 const Header = ({title}) => {
     return (
         <header>
             <span className="title">{title}</span>
-            <Logo/> 
+            <img className="logo" src={Logo} alt="Eagle Logo"/>
 
         </header>
     )
